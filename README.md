@@ -40,7 +40,10 @@ curl -X POST -H "Content-Type: application/json" \
 The response will be:
 
 ```json
-{ "age": 25 }
+{
+  "age": 25,
+  "explanation": "AI는 이마 주름과 눈가 음영을 근거로 판단했습니다."
+}
 ```
 
-The `age` value is an integer predicted by the model.
+`age` is the predicted age and `explanation` summarizes the Grad-CAM result.

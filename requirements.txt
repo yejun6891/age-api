@@ -4,3 +4,5 @@ torchvision
 pillow
 requests
 gunicorn
+opencv-python
+matplotlib
