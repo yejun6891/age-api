@@ -23,7 +23,7 @@ def download_weights():
 
 
 def load_model():
-    """Load ResNet18-based age prediction model with downloaded weights."""
+   """Load ResNet18-based age prediction model with downloaded weights."""
     download_weights()
     model = models.resnet18()
     model.fc = nn.Linear(model.fc.in_features, 1)
@@ -32,9 +32,9 @@ def load_model():
     model.eval()
     return model
 
-
-
-_transform = transforms.Compose([
+  
+  
+transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
 ])
