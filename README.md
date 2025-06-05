@@ -1,6 +1,6 @@
 # Age Prediction API
 
-This project provides a Flask based API for estimating the age of a face in an image using the **demoage** model. Grad-CAM is used to generate a short explanation describing which facial areas influenced the prediction. It is ready to be deployed on [Render](https://render.com/).
+This project provides a Flask based API for estimating the age of a face in an image using the **demoage** model. It is ready to be deployed on [Render](https://render.com/).
 
 ## Setup
 

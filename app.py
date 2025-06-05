@@ -18,8 +18,8 @@ def predict():
             return jsonify({'error': 'image is required'}), 400
         img_bytes = base64.b64decode(data['image'])
 
-    age, explanation = predict_age(img_bytes, model)
-    return jsonify({'age': int(age), 'explanation': explanation})
+    age = predict_age(img_bytes, model)
+    return jsonify({'age': int(age)})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
